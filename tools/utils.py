@@ -73,23 +73,6 @@ def getDriver(url):
     return driver
 
 
-def driverRefresh(driver, m_url, i, j):
-    driver.quit()
-    driver = getDriver(m_url)
-    mySelect_D = Select(driver.find_element_by_id("ddlDist"))
-    mySelect_D.options[i].click()
-    mySelect_C = Select(driver.find_element_by_id("ddlAC"))
-    mySelect_C.options[j].click()
-    driver.find_element_by_css_selector('#btnGetPollingStations').click()
-    # Get HTML data from page
-    html = driver.page_source
-    soup = BeautifulSoup(html, "lxml")
-    # Locate table
-    rows = soup.findAll('tr')
-    cols = rows[4].findAll('td')
-    return driver, cols
-
-
 def is_valid_pdf(fn):
     """Check is the PDF valid """
     try:
