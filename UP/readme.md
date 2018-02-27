@@ -21,4 +21,4 @@ Year = Draft Roll for 2018
 ### Note
 1. Total Number of files =  151,843
 2. The downloaded files are of form AC{assembly constituency number}_S24A{assembly constituency number}P{polling station number}.pdf
-3. Files not available online can be found in ``up4.txt``
+3. Files not available(6688) online can be found in ``up4.txt``
