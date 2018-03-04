@@ -11,7 +11,9 @@ pip install -r requirements.txt
 python jammu_kashmir.py
 ```
 
-### Previous Script for Fetching English Rolls
+### Script for Fetching English Rolls (Previous Version)
 
-Website for J & K Electoral Rolls has changed over time.  [jk_eng/] was used to fetch the English electoral rolls (available for 2 districts).
+Website for J & K Electoral Rolls has changed over time.  [jk_eng/](jk_eng/) was used to fetch the English electoral rolls (available for 2 districts) from a previous iteration of the site.
+
+
 
