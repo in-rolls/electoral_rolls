@@ -1,5 +1,17 @@
-### West Bengal
+## West Bengal
 
-URL = http://ceowestbengal.nic.in/DistrictList.aspx
+URL = http://wbceo.in/DistrictList.aspx
 
-SITE UNAVAILABLE 
+The python script [west_bengal.py](west_bengal.py) iterates over all the districts, all the Assembly Constituencies (ACs) within each district, and all the polling stations within each AC, and does two things:
+
+1) downloads all the pdfs in `wb_pdfs/`: the draft_rolls are saved to `wb_pdfs/draft_rolls/` and the supplementary rolls are saved to `wb_pdfs/supplements/`. (We don't download the maps.)
+
+2) creates [west_bengal.csv](west_bengal.csv) with the following fields
+`district_name, ac_no, ac_name, part_no, polling_station_name, filename` (each polling station has 2 rows: 1 for draft roll, 1 for supplementary roll)
+
+### Running the Script
+
+```
+pip install -r requirements.txt
+python west_bengal.py
+```
