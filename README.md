@@ -24,7 +24,7 @@ Gaurav Sood and Atul Dhingra. 2018. Indian Electoral Rolls PDF Corpus. https://g
 | [Andhra Pradesh](andhra/)                | 2017    | Telugu, English          |
 | [Arunachal Pradesh](arunachal/)          | 2017    | English                  |
 | [Assam](assam/)                          | 2018    | Bengali                  |
-| [Bihar](bihar/)                          | 2017    | Hindi                    |
+| [Bihar*](bihar/)                          | 2015, 2017    | Hindi                    |
 | [Chattisgarh](chattisgarh/)--- Not reachable | --      | --                       |
 | [Chandigarh](chandigarh/)                | 2018    | Hindi                    |
 | [Dadra & Nagar Haveli](dadra/)           | 2017    | Gujarati, English        |
@@ -57,6 +57,8 @@ Gaurav Sood and Atul Dhingra. 2018. Indian Electoral Rolls PDF Corpus. https://g
 | [Uttarakhand](uttarakhand/)              | 2017    | Hindi                    |
 | [West Bengal](wb/)     |                 | 2018    |
 
+* 2015 Bihar is via Aaditya Dar
+ 
 ### Archives
 
 | State                                | Year(s)    | Language(s)       |
