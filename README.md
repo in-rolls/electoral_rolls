@@ -10,7 +10,35 @@ To ameliorate concerns about eligible voters not being on the rolls (and ineligi
 
 ### How Do I Get the Electoral Rolls?
 
-Given privacy concerns, we are releasing the data only for research purposes. To access the pdfs, you must agree to take all precautions to maintain the privacy of Indian electors. (There is a difference between data being available in pdfs, split across different sites, sometimes behind CAPTCHA, and a common data dump.) We will also ask for a modest fee of $25 to offset our data hosting costs. (The total data are over 1.2 TB.) The fee is also there to clamp down on frivolous requests. In return for being a thoughtful researcher who values the privacy of people and a payment of \$25, you will get read access to Google Coldline storage bucket for a month. (We expect you to download data only once during that time.) If you would like access to the electoral rolls, please fill out the following [form](https://goo.gl/forms/03YnSiQFpOig4H7H3).
+Given privacy concerns, we are releasing the data only for research purposes. To access the pdfs, you must agree to take all precautions to maintain the privacy of Indian electors. (There is a difference between data being available in pdfs, split across different sites, sometimes behind CAPTCHA, and a common data dump.) We will also ask for a modest fee of $25 to offset our data hosting costs. (The total data are over 1.2 TB.) The fee is also there to clamp down on frivolous requests. In return for being a thoughtful researcher who values the privacy of people and a payment of \$25, you will get read access to Google Coldline storage bucket for a month. The buckets are setup as requester pays. So you need to create a project that will be used for billing. You can access them as follows:
+
+```
+gsutil -u projectname_for_billing ls gs://in-electoral-rolls/
+```
+
+```
+gs://in-electoral-rolls/andaman.tar.gz
+gs://in-electoral-rolls/andhra_pdfs.tar.gz
+gs://in-electoral-rolls/arunachal.tar.gz
+gs://in-electoral-rolls/assam.tar.gz
+gs://in-electoral-rolls/bihar.tar.gz
+gs://in-electoral-rolls/chandigarh_pdfs.tar.gz
+gs://in-electoral-rolls/dadra_pdfs.tar.gz
+gs://in-electoral-rolls/daman_2015.tar.gz
+gs://in-electoral-rolls/daman_2016.tar.gz
+...
+```
+
+If you would like access to the electoral rolls, please fill out the following [form](https://goo.gl/forms/03YnSiQFpOig4H7H3). 
+
+You will need to also get IRB approval from your respective university or institution. The IRB-approved proposal should include:
+
+1. Case for why the data are necessary
+2. Acknowledgment that the data will be kept in a secure environment
+3. All the people who will have access to the data
+4. That the data will only be used on projects with IRB approval 
+5. That data won't be shared with people who are not identified in 3.
+6. That publications and presentations will not reveal identifying individual information: only statistical summaries will be presented. 
 
 ### Suggested Citation
 
@@ -57,8 +85,12 @@ Gaurav Sood and Atul Dhingra. 2018. Indian Electoral Rolls PDF Corpus. https://g
 | [Uttarakhand](uttarakhand/)              | 2017    | Hindi                    |
 | [West Bengal](wb/)     |                 | 2018    |
 
-* 2015 Bihar is via Aaditya Dar
- 
+### Acknowledgments
+
+* Bihar 2015 electoral rolls were contributed by Aaditya Dar. Aaditya also pointed us the right way to setup a data access procedure where researchers need to get IRB approval.
+* The specifics of IRB are 'inspired' by http://adfdell.pstc.brown.edu/arisreds_data/readme.txt   
+* Elian Carsenat helped us craft better directions for how to access data on GOOG storage. 
+
 ### Archives
 
 | State                                | Year(s)    | Language(s)       |
@@ -66,7 +98,6 @@ Gaurav Sood and Atul Dhingra. 2018. Indian Electoral Rolls PDF Corpus. https://g
 | [Daman](daman_archives/)             | 2015--2016 | English, Gujarati |
 | [Kerala](kerala_archives/)           | 2011-2016  | Malyalam          |
 | [Uttarakhand](uttarakhand_archives/) | 2007--2016 | Hindi             |
-
 
 ### License
 
