@@ -85,12 +85,6 @@ Gaurav Sood and Atul Dhingra. 2018. Indian Electoral Rolls PDF Corpus. https://g
 | [Uttarakhand](uttarakhand/)              | 2017    | Hindi                    |
 | [West Bengal](wb/)     |                 | 2018    |
 
-### Acknowledgments
-
-* Bihar 2015 electoral rolls were contributed by Aaditya Dar. Aaditya also pointed us the right way to setup a data access procedure where researchers need to get IRB approval.
-* The specifics of IRB are 'inspired' by http://adfdell.pstc.brown.edu/arisreds_data/readme.txt   
-* Elian Carsenat helped us craft better directions for how to access data on GOOG storage. 
-
 ### Archives
 
 | State                                | Year(s)    | Language(s)       |
@@ -98,6 +92,12 @@ Gaurav Sood and Atul Dhingra. 2018. Indian Electoral Rolls PDF Corpus. https://g
 | [Daman](daman_archives/)             | 2015--2016 | English, Gujarati |
 | [Kerala](kerala_archives/)           | 2011-2016  | Malyalam          |
 | [Uttarakhand](uttarakhand_archives/) | 2007--2016 | Hindi             |
+
+### Acknowledgments
+
+* Bihar 2015 electoral rolls were contributed by Aaditya Dar. Aaditya also pointed us the right way to setup a data access procedure where researchers need to get IRB approval.
+* The specifics of IRB are 'inspired' by http://adfdell.pstc.brown.edu/arisreds_data/readme.txt   
+* Elian Carsenat helped us craft better directions for how to access data on GOOG storage. 
 
 ### License
 
