@@ -1,7 +1,0 @@
-selenium
-requests
-bs4
-tqdm
-pandas
-lxml
-pypdf2

@@ -2,7 +2,7 @@
 
 We have built a dataset of nearly all the Indian electors. Our data includes information on first and last name, gender, polling station (constituency, district, and state), father or husband's name, among other such details. We assembled this data by scraping and parsing the electoral rolls.
 
-This repository includes scripts for downloading  the pdf electoral rolls from the various state election commission sites. [Parse PDF Rolls](https://github.com/in-rolls/parse_elex_rolls) has scripts for parsing the electoral rolls, scripts for translating native language rolls to English, and information about the resulting CSVs.
+This repository includes scripts for downloading  the PDF electoral rolls from the various state election commission sites. [Parse PDF Rolls](https://github.com/in-rolls/parse_elex_rolls) has scripts for parsing the electoral rolls, scripts for translating native language rolls to English, and information about the resulting CSVs.
 
 ### Electoral Rolls
 
@@ -40,6 +40,8 @@ You will need to also get IRB approval from your respective university or instit
 5. That data won't be shared with people who are not identified in 3.
 6. That publications and presentations will not reveal identifying individual information: only statistical summaries will be presented. 
 
+If you would like access to CSVs from parsing the electoral roll pdfs, check out [https://github.com/in-rolls/parse_elex_rolls](https://github.com/in-rolls/parse_elex_rolls). The data are posted on the Harvard Dataverse at [http://dx.doi.org/10.7910/DVN/MUEGDT](http://dx.doi.org/10.7910/DVN/MUEGDT).
+
 ### Suggested Citation
 
 Gaurav Sood and Atul Dhingra. 2018. Indian Electoral Rolls PDF Corpus. https://github.com/in-rolls/electoral_rolls
@@ -64,7 +66,7 @@ Gaurav Sood and Atul Dhingra. 2018. Indian Electoral Rolls PDF Corpus. https://g
 | [Jammu & Kashmir](jammu_kashmir/)        | 2018    | Hindi, English, and Urdu |
 | [Jharkhand](jharkhand/)                  | 2018    | Hindi                    |
 | [Lakshadweep](lakshadweep/)              | 2017    | Malayalam                |
-| [Karnataka](karnatka/)                   | 2017    | Kannada                  |
+| [Karnataka](karnatka/)                   | 2017, 2018  | Kannada                  |
 | [Kerala](kerala/)                        | 2018    | Malayalam, English       |
 | [Madhya Pradesh](mp/)                    | 2017    | Hindi                    |
 | [Maharashtra](maharashtra/)              | 2018    | Marathi                  |

@@ -1,25 +1,31 @@
-### Karnataka
+## Karnataka Electoral Rolls
 
+The python script [karnataka_2018.py](karnataka_2018.py) iterates through the 2018 final electoral rolls posted at http://ceokarnataka.kar.nic.in/FinalRoll-2018/Dist_List.aspx and does two things:
 
-### Details
+1. It produces [karnataka.csv](karnataka_2018.csv) (encoded in UTF-8) with the following columns: `district_no, district_name, ac_no, ac_name, part_no, polling_station_name, filename` 
 
-URL = http://ceokarnataka.kar.nic.in/DraftRolls_2017/
+2. Downloads all the pdfs to a local folder called `karnataka_2018/`
 
-Year = Draft Roll for 2017
+### Running the Script
 
-### Running Scripts
+```
+pip install -r requirements_2018.txt
+python karnataka_2018.py
+```
 
-1. `conda env create -f tools/environment.yml` to install working environment and
-    `source activate erolls`
-2.  Or, `pip install -r requirements.txt` if not using a conda environment
-3. `tools/utils.py` is a helper function for downloading files, and sanity checks
-4. `python karnataka.py` to downloads all the pdfs to directory `../data/Karnataka/`
-    and creates 'karnataka.txt' for files that were not downloaded successfully
-5. `python karnataka_retry.py` for retrying downloads for files in 'karnataka.txt'
-6. `python karnataka_SanityCheck.py` for doing a sanity check on the files downloaded
+### 2017
 
-### Note
-1. Total Number of files =  9012
-2. The downloaded files are of form AC{assembly constituency number}_AC{assembly constituency number}{part number}.pdf
+The python script [karnataka_2017.py](karnataka_2017.py) iterates over the 2017 draft electoral rolls posted at http://ceokarnataka.kar.nic.in/DraftRolls_2017/ and does two things:
 
+1. It produces [karnataka_2017.csv](karnataka_2017.csv) (encoded in UTF-8) with the following columns: `district_no, district_name, ac_no, ac_name, part_no, polling_station_name, filename` 
 
+2. Downloads all the pdfs to a local folder called `karnataka_2017/`
+
+```
+pip install -r requirements_2017.txt
+python karnataka_2017.py
+```
+
+### Data
+
+We have X,XXX files for 2018 and Y,YYY files for 2017.
