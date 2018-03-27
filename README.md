@@ -66,7 +66,7 @@ Gaurav Sood and Atul Dhingra. 2018. Indian Electoral Rolls PDF Corpus. https://g
 | [Jammu & Kashmir](jammu_kashmir/)        | 2018    | Hindi, English, and Urdu |
 | [Jharkhand](jharkhand/)                  | 2018    | Hindi                    |
 | [Lakshadweep](lakshadweep/)              | 2017    | Malayalam                |
-| [Karnataka](karnatka/)                   | 2017, 2018  | Kannada                  |
+| [Karnataka](karnatka/)                   | 2015--2018  | Kannada                  |
 | [Kerala](kerala/)                        | 2018    | Malayalam, English       |
 | [Madhya Pradesh](mp/)                    | 2017    | Hindi                    |
 | [Maharashtra](maharashtra/)              | 2018    | Marathi                  |
