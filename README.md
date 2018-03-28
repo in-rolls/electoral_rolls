@@ -54,7 +54,7 @@ Gaurav Sood and Atul Dhingra. 2018. Indian Electoral Rolls PDF Corpus. https://g
 | [Andhra Pradesh](andhra/)                | 2017    | Telugu, English          |
 | [Arunachal Pradesh](arunachal/)          | 2017    | English                  |
 | [Assam](assam/)                          | 2018    | Bengali                  |
-| [Bihar*](bihar/)                          | 2015, 2017    | Hindi                    |
+| [Bihar*](bihar/)                         | 2017    | Hindi                    |
 | [Chattisgarh](chattisgarh/)--- Not reachable | --      | --                       |
 | [Chandigarh](chandigarh/)                | 2018    | Hindi                    |
 | [Dadra & Nagar Haveli](dadra/)           | 2017    | Gujarati, English        |
@@ -66,7 +66,7 @@ Gaurav Sood and Atul Dhingra. 2018. Indian Electoral Rolls PDF Corpus. https://g
 | [Jammu & Kashmir](jammu_kashmir/)        | 2018    | Hindi, English, and Urdu |
 | [Jharkhand](jharkhand/)                  | 2018    | Hindi                    |
 | [Lakshadweep](lakshadweep/)              | 2017    | Malayalam                |
-| [Karnataka](karnatka/)                   | 2015--2018  | Kannada                  |
+| [Karnataka](karnatka/)                   | 2018    | Kannada                  |
 | [Kerala](kerala/)                        | 2018    | Malayalam, English       |
 | [Madhya Pradesh](mp/)                    | 2017    | Hindi                    |
 | [Maharashtra](maharashtra/)              | 2018    | Marathi                  |
@@ -91,7 +91,9 @@ Gaurav Sood and Atul Dhingra. 2018. Indian Electoral Rolls PDF Corpus. https://g
 
 | State                                | Year(s)    | Language(s)       |
 | ------------------------------------ | ---------- | ----------------- |
+| Bihar (see acknowledgments)          | 2015       | Hindi             |
 | [Daman](daman_archives/)             | 2015--2016 | English, Gujarati |
+| [Karnataka](karnataka/)              | 2015--2017 | Kannada           |
 | [Kerala](kerala_archives/)           | 2011-2016  | Malyalam          |
 | [Uttarakhand](uttarakhand_archives/) | 2007--2016 | Hindi             |
 
