@@ -20,4 +20,4 @@ Year = Draft Roll for 2018
 ### Note
 1. Total Number of files =  13402
 2. The downloaded files are of form AC{{assembly constituency number}}_AC{assembly constituency number}{Part Number}.pdf
-
+3. There are some files missing from Hindi/English version of the download, please see ``diff.txt`` for details
