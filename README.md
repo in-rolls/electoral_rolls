@@ -85,7 +85,7 @@ Gaurav Sood and Atul Dhingra. 2018. Indian Electoral Rolls PDF Corpus. https://g
 | [Tripura](tripura/)                      | 2018    | Bengali                  |
 | [Uttar Pradesh](up/)                     | 2018    | Hindi                    |
 | [Uttarakhand](uttarakhand/)              | 2017    | Hindi                    |
-| [West Bengal](wb/)                       | 2018    | Bengali                   |
+| [West Bengal](west_bengal/)                       | 2018    | Bengali                   |
 
 
 ### Archives
