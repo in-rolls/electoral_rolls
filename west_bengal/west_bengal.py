@@ -3,18 +3,14 @@ from requests.adapters import HTTPAdapter
 from scrapy import Selector
 import csv
 import os
+import threading
 
 # --------------------define variables-------------------
-OUTPUT_FILE = 'west_bengal.csv'
+OUTPUT_FILE = 'west_bengal_final.csv'
 DRAFT_ROLLS_FOLDER = 'wb_pdfs/draft_rolls/'
 SUPPLEMENTS_FOLDER = 'wb_pdfs/supplements/'
 
 
-# -------------------------------------------------------
-
-# --------------------define global functions------------
-
-# -----------------------------------------------------------------------------------------------------------------------
 class WBScraper:
     def __init__(self,
                  base_url='http://wbceo.in/'
@@ -143,7 +139,7 @@ class WBScraper:
         except ImportError:
             from PIL import Image
 
-        api_key = 'YYYYYY'
+        api_key = 'API KEY'
 
         ret = self.session.get(image_url)
         captcha_fp = BytesIO(ret.content)
@@ -174,7 +170,9 @@ class WBScraper:
             'ac_name',
             'part_no',
             'polling_station_name',
-            'filename']
+            'filename'#,
+            # 'download_url'
+        ]
 
         # write header into output csv file
         writer = csv.writer(open(OUTPUT_FILE, 'w'), delimiter=',', lineterminator='\n')
@@ -186,10 +184,10 @@ class WBScraper:
         writer.writerow(data)
 
     def DownloadPdfFile(self, download_url, filename):
-        print('downloading %s' % (filename))
+        print('downloading %s' % (download_url))
         if os.path.isfile(filename) == True:
             print('this file already downloaded.')
-            return
+            return 'ok'
 
         # set url
         url = download_url
@@ -201,13 +199,22 @@ class WBScraper:
             with open(filename, 'wb') as f:
                 f.write(ret.content)
             print('success to download %s' % (filename))
+            return 'ok'
         else:
             print('fail to get pdf file: %s' % (download_url))
+            return 'fail'
+
+    def DownloadPdfFileThread(self, download_url_list, filename):
+        for download_url in download_url_list:
+            if self.DownloadPdfFile(download_url, filename) == 'ok':
+                break
+
 
     def Start(self,
               start_district='',
               start_ac='',
               start_ps=''):
+
         # write header into output csv file
         if start_district == '' and start_ac == '' and start_ps == '': self.WriteHeader()
 
@@ -271,8 +278,19 @@ class WBScraper:
                             str('{0:03d}'.format(int(ac['no']))),
                             draft_roll_pdf_name
                         )
+                        draft_roll_pdf_url1 = 'http://wbceo.in/EROLLS/PDF/Hindi/A%s/%s' % (
+                            str('{0:03d}'.format(int(ac['no']))),
+                            draft_roll_pdf_name
+                        )
+                        draft_roll_pdf_url2 = 'http://wbceo.in/EROLLS/PDF/English/A%s/%s' % (
+                            str('{0:03d}'.format(int(ac['no']))),
+                            draft_roll_pdf_name
+                        )
 
-                        self.DownloadPdfFile(draft_roll_pdf_url, DRAFT_ROLLS_FOLDER + draft_roll_pdf_name)
+                        # self.DownloadPdfFile(draft_roll_pdf_url, DRAFT_ROLLS_FOLDER + draft_roll_pdf_name)
+                        self.DownloadPdfFileThread([draft_roll_pdf_url, draft_roll_pdf_url1, draft_roll_pdf_url2], DRAFT_ROLLS_FOLDER + draft_roll_pdf_name)
+                        # # run get download pdf file thread
+                        # threading.Timer(1, self.DownloadPdfFileThread, [[draft_roll_pdf_url, draft_roll_pdf_url1], DRAFT_ROLLS_FOLDER + draft_roll_pdf_name]).start()
 
                         # write data into output csv file
                         data = []
@@ -282,6 +300,7 @@ class WBScraper:
                         data.append(ps['no'])
                         data.append(ps['name'])
                         data.append(DRAFT_ROLLS_FOLDER + draft_roll_pdf_name)
+                        # data.append(draft_roll_pdf_url)
                         self.WriteData(data)
 
                         # process supplements
@@ -293,8 +312,19 @@ class WBScraper:
                             str('{0:03d}'.format(int(ac['no']))),
                             supplements_pdf_name
                         )
+                        supplements_pdf_url1 = 'http://wbceo.in/EROLLS/sup02/PDF/Hindi/A%s/%s' % (
+                            str('{0:03d}'.format(int(ac['no']))),
+                            supplements_pdf_name
+                        )
+                        supplements_pdf_url2 = 'http://wbceo.in/EROLLS/sup02/PDF/English/A%s/%s' % (
+                            str('{0:03d}'.format(int(ac['no']))),
+                            supplements_pdf_name
+                        )
 
-                        self.DownloadPdfFile(supplements_pdf_url, SUPPLEMENTS_FOLDER + supplements_pdf_name)
+                        # self.DownloadPdfFile(supplements_pdf_url, SUPPLEMENTS_FOLDER + supplements_pdf_name)
+                        self.DownloadPdfFileThread([supplements_pdf_url, supplements_pdf_url1, supplements_pdf_url2], SUPPLEMENTS_FOLDER + supplements_pdf_name)
+                        # # run get download pdf file thread
+                        # threading.Timer(1, self.DownloadPdfFileThread, [[supplements_pdf_url, supplements_pdf_url1], SUPPLEMENTS_FOLDER + supplements_pdf_name]).start()
 
                         # write data into output csv file
                         data = []
@@ -304,6 +334,7 @@ class WBScraper:
                         data.append(ps['no'])
                         data.append(ps['name'])
                         data.append(SUPPLEMENTS_FOLDER + supplements_pdf_name)
+                        # data.append(supplements_pdf_url)
                         self.WriteData(data)
 
             #             break
@@ -311,17 +342,15 @@ class WBScraper:
             #     break
             # break
 
-
-# ------------------------------------------------------- main -------------------------------------------------------
 def main():
     # create scraper object
     scraper = WBScraper()
 
     # start to scrape
     scraper.Start(
-        start_district='MALDA',
-        start_ac='50',
-        start_ps='192'
+        start_district='NORTH 24 PARGANAS',
+        start_ac='102',
+        start_ps='225'
     )
 
 
