@@ -88,11 +88,12 @@ Gaurav Sood and Atul Dhingra. 2018. Indian Electoral Rolls PDF Corpus. https://g
 | [West Bengal](west_bengal/)                       | 2018    | Bengali                   |
 
 
-### Archives
+### Archives and 2020
 
 | State                                | Year(s)    | Language(s)       |
 | ------------------------------------ | ---------- | ----------------- |
 | Bihar (see acknowledgments)          | 2015       | Hindi             |
+| [Bihar](https://github.com/in-rolls/bihar-2020-electoral-rolls)                            | 2020       | Hindi             |
 | [Daman](daman_archives/)             | 2015--2016 | English, Gujarati |
 | [Karnataka](karnataka/)              | 2015--2017 | Kannada           |
 | [Kerala](kerala_archives/)           | 2011-2016  | Malyalam          |
