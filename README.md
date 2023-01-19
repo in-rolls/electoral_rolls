@@ -21,8 +21,6 @@ You will need to also get IRB approval from your respective university or instit
 5. That data won't be shared with people who are not identified in 3.
 6. That publications and presentations will not reveal identifying individual information: only statistical summaries will be presented. 
 
-If you would like access to CSVs from parsing the electoral roll pdfs, check out [https://github.com/in-rolls/parse_elex_rolls](https://github.com/in-rolls/parse_elex_rolls). The data are posted on the Harvard Dataverse at [http://dx.doi.org/10.7910/DVN/MUEGDT](http://dx.doi.org/10.7910/DVN/MUEGDT).
-
 #### Accessing the Data
 
 The data are available on [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/OG47IV) and via Google Coldline Storage. The GCS buckets are setup as requester pays. So you need to create a project that will be used for billing.
@@ -45,6 +43,8 @@ gs://in-electoral-rolls/daman_2015.tar.gz
 gs://in-electoral-rolls/daman_2016.tar.gz
 ...
 ```
+
+If you would like access to CSVs from parsing the electoral roll pdfs, check out [https://github.com/in-rolls/parse_elex_rolls](https://github.com/in-rolls/parse_elex_rolls). The data are posted on the Harvard Dataverse at [http://dx.doi.org/10.7910/DVN/MUEGDT](http://dx.doi.org/10.7910/DVN/MUEGDT).
 
 ### Suggested Citation
 
