@@ -10,7 +10,24 @@ To ameliorate concerns about eligible voters not being on the rolls (and ineligi
 
 ### How Do I Get the Electoral Rolls?
 
-Given privacy concerns, we are releasing the data only for research purposes. To access the pdfs, you must agree to take all precautions to maintain the privacy of Indian electors. (There is a difference between data being available in pdfs, split across different sites, sometimes behind CAPTCHA, and a common data dump.) We will also ask for a modest fee of $25 to offset our data hosting costs. (The total data are over 1.2 TB.) The fee is also there to clamp down on frivolous requests. In return for being a thoughtful researcher who values the privacy of people and a payment of \$25, you will get read access to Google Coldline storage bucket for a month. The buckets are setup as requester pays. So you need to create a project that will be used for billing. You can access them as follows:
+Given privacy concerns, we are releasing the data only for research purposes. To access the pdfs, you must agree to take all precautions to maintain the privacy of Indian electors. (There is a difference between data being available in pdfs, split across different sites, sometimes behind CAPTCHA, and a common data dump.) If you would like access to the electoral rolls, please fill out the following [form](https://goo.gl/forms/03YnSiQFpOig4H7H3). 
+
+You will need to also get IRB approval from your respective university or institution. The IRB-approved proposal should include:
+
+1. Case for why the data are necessary
+2. Acknowledgment that the data will be kept in a secure environment
+3. All the people who will have access to the data
+4. That the data will only be used on projects with IRB approval 
+5. That data won't be shared with people who are not identified in 3.
+6. That publications and presentations will not reveal identifying individual information: only statistical summaries will be presented. 
+
+If you would like access to CSVs from parsing the electoral roll pdfs, check out [https://github.com/in-rolls/parse_elex_rolls](https://github.com/in-rolls/parse_elex_rolls). The data are posted on the Harvard Dataverse at [http://dx.doi.org/10.7910/DVN/MUEGDT](http://dx.doi.org/10.7910/DVN/MUEGDT).
+
+#### Accessing the Data
+
+The data are available on [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/OG47IV) and via Google Coldline Storage. The GCS buckets are setup as requester pays. So you need to create a project that will be used for billing.
+
+To access data from GCS, you will need to do the following:
 
 ```
 gsutil -u projectname_for_billing ls gs://in-electoral-rolls/
@@ -29,22 +46,9 @@ gs://in-electoral-rolls/daman_2016.tar.gz
 ...
 ```
 
-If you would like access to the electoral rolls, please fill out the following [form](https://goo.gl/forms/03YnSiQFpOig4H7H3). 
-
-You will need to also get IRB approval from your respective university or institution. The IRB-approved proposal should include:
-
-1. Case for why the data are necessary
-2. Acknowledgment that the data will be kept in a secure environment
-3. All the people who will have access to the data
-4. That the data will only be used on projects with IRB approval 
-5. That data won't be shared with people who are not identified in 3.
-6. That publications and presentations will not reveal identifying individual information: only statistical summaries will be presented. 
-
-If you would like access to CSVs from parsing the electoral roll pdfs, check out [https://github.com/in-rolls/parse_elex_rolls](https://github.com/in-rolls/parse_elex_rolls). The data are posted on the Harvard Dataverse at [http://dx.doi.org/10.7910/DVN/MUEGDT](http://dx.doi.org/10.7910/DVN/MUEGDT).
-
 ### Suggested Citation
 
-Gaurav Sood and Atul Dhingra. 2018. Indian Electoral Rolls PDF Corpus. https://github.com/in-rolls/electoral_rolls
+Gaurav Sood and Atul Dhingra. 2018. Indian Electoral Rolls PDF Corpus. https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/OG47IV
 
 ### Scripts and Information by State
 
