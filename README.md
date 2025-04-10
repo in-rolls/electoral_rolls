@@ -112,3 +112,11 @@ Gaurav Sood and Atul Dhingra. 2018. Indian Electoral Rolls PDF Corpus. https://d
 ### License
 
 The scripts are provided under the [MIT license](https://opensource.org/licenses/MIT). 
+
+## 🔗 Adjacent Repositories
+
+- [in-rolls/elector_count](https://github.com/in-rolls/elector_count) — Estimate the total number of electors in a state by counting the number of pages in all the electoral rolls
+- [in-rolls/parse_searchable_rolls](https://github.com/in-rolls/parse_searchable_rolls) — Parse Searchable Electoral Rolls
+- [in-rolls/google_vision_ocr](https://github.com/in-rolls/google_vision_ocr) — Using Google Vision API to Get Text From (Unreadable) Electoral Rolls
+- [in-rolls/poll-station-metadata](https://github.com/in-rolls/poll-station-metadata) — Metadata on Polling Stations, including Officers, data on the building, and link to electoral rolls (some inactive)
+- [in-rolls/local_elections_bihar](https://github.com/in-rolls/local_elections_bihar) — Candidate Info. + Valid Votes Won by Cands. in the 2016 Bihar Panchayat Elections
