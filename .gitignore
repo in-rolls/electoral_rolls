@@ -104,3 +104,5 @@ ENV/
 
 #Literature 
 *.pdf
+.github/.DS_Store
+.DS_Store
