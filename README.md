@@ -119,4 +119,4 @@ The scripts are provided under the [MIT license](https://opensource.org/licenses
 - [in-rolls/parse_searchable_rolls](https://github.com/in-rolls/parse_searchable_rolls) — Parse Searchable Electoral Rolls
 - [in-rolls/google_vision_ocr](https://github.com/in-rolls/google_vision_ocr) — Using Google Vision API to Get Text From (Unreadable) Electoral Rolls
 - [in-rolls/poll-station-metadata](https://github.com/in-rolls/poll-station-metadata) — Metadata on Polling Stations, including Officers, data on the building, and link to electoral rolls (some inactive)
-- [in-rolls/local_elections_bihar](https://github.com/in-rolls/local_elections_bihar) — Candidate Info. + Valid Votes Won by Cands. in the 2016 Bihar Panchayat Elections
+- [in-rolls/parse_unsearchable_rolls](https://github.com/in-rolls/parse_unsearchable_rolls) — Parse Unsearchable Electoral Rolls
