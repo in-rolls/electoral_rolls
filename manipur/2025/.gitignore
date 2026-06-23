@@ -1,0 +1,20 @@
+# Secrets — never commit the API key
+.env
+
+# Virtualenv
+.venv/
+
+# Generated artifacts
+logs/
+pdfs/
+*.part
+*.comp
+*.tmp
+
+# upload artifacts
+*.tar.gz.part*
+.*_filelist.txt
+
+# runtime logs
+*.out
+*.log
