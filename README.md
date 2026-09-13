@@ -92,12 +92,21 @@ Gaurav Sood and Atul Dhingra. 2018. Indian Electoral Rolls PDF Corpus. https://d
 | [West Bengal](west_bengal/)                       | 2018    | Bengali                   |
 
 
-### Archives and 2020
+### State-Year Repositories
+
+Later scrapes each have their own repository, named `electoral_rolls_<state>_<year>`, with the scripts, an index of every part, and where the data are held.
+
+| Repository | State | Year | Language(s) | Data |
+| ---------- | ----- | ---- | ----------- | ---- |
+| [electoral_rolls_bihar_2020](https://github.com/in-rolls/electoral_rolls_bihar_2020) | Bihar | 2020 | Hindi | PDFs on GCS (`gs://in-electoral-rolls-2020/bihar`) |
+| [electoral_rolls_up_2023](https://github.com/in-rolls/electoral_rolls_up_2023) | Uttar Pradesh | 2023 | Hindi | PDFs on [Dataverse](https://doi.org/10.7910/DVN/OG47IV) |
+| [electoral_rolls_assam_2026](https://github.com/in-rolls/electoral_rolls_assam_2026) | Assam | 2026 | Assamese, Bengali, English | Parsed part-level data in the repository |
+
+### Archives
 
 | State                                | Year(s)    | Language(s)       |
 | ------------------------------------ | ---------- | ----------------- |
 | Bihar (see acknowledgments)          | 2015       | Hindi             |
-| [Bihar](https://github.com/in-rolls/bihar-2020-electoral-rolls)                            | 2020       | Hindi             |
 | [Daman](daman_archives/)             | 2015--2016 | English, Gujarati |
 | [Karnataka](karnataka/)              | 2015--2017 | Kannada           |
 | [Kerala](kerala_archives/)           | 2011-2016  | Malyalam          |
