@@ -2,7 +2,7 @@
 
 URL = http://ceoandhra.nic.in/home.aspx
 
-There are 41,635 Telugu, and 41,834 English language electoral rolls. 439 English language electoral rolls and 637 Telugu rolls were unavailable. 
+The metadata contains 42,272 polling-station rows. It links to 41,833 available English electoral rolls and 41,635 available Telugu electoral rolls; 439 English rolls and 637 Telugu rolls were unavailable.
 
 The python script [andhra.py](andhra.py) and a script with helper functions in [helpers](helpers/) iterates through the data on the webpage HTML table and does two things:
 
