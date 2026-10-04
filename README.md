@@ -6,7 +6,7 @@ This repository includes scripts for downloading  the PDF electoral rolls from t
 
 ### Electoral Rolls
 
-To ameliorate concerns about eligible voters not being on the rolls (and ineligible electors being on the rolls), the [Election Commission of India](http://eci.nic.in/eci/eci.html) mandates that state election commissions publish electoral rolls. As a result, the 36 different election commissions---29 states and 7 union territories---post electoral rolls for each polling station on their websites. The websites vary enormously in design, in the metadata they provide about the polling stations, and the language in which they provide the electoral rolls. For instance, some commissions provide electoral rolls in English, some in the main native language(s) of the state, and some in both the main native language(s) of the state and English. The only thing that is constant is that these electoral rolls are provided in dense pdfs. So we wrote separate scrapers for downloading the pdfs. In many cases, we also downloaded the metadata for each of the polling stations (pdfs) that was on the website. (A [separate repository](https://github.com/in-rolls/poll-station-metadata) uses a different source of data to collate metadata on polling stations.) For scripts, information about the source of the electoral rolls, and such, see the table below. 
+To ameliorate concerns about eligible voters not being on the rolls (and ineligible electors being on the rolls), the [Election Commission of India](http://eci.nic.in/eci/eci.html) mandates that state election commissions publish electoral rolls. As a result, the 36 different election commissions---29 states and 7 union territories---post electoral rolls for each polling station on their websites. The websites vary enormously in design, in the metadata they provide about the polling stations, and the language in which they provide the electoral rolls. For instance, some commissions provide electoral rolls in English, some in the main native language(s) of the state, and some in both the main native language(s) of the state and English. The only thing that is constant is that these electoral rolls are provided in dense pdfs. So we wrote separate scrapers for downloading the pdfs. In many cases, we also downloaded the metadata for each of the polling stations (pdfs) that was on the website. (A [separate repository](https://github.com/in-rolls/polling_stations_metadata) uses a different source of data to collate metadata on polling stations.) For scripts, information about the source of the electoral rolls, and such, see the table below. 
 
 ### How Do I Get the Electoral Roll PDFs?
 
@@ -124,8 +124,8 @@ The scripts are provided under the [MIT license](https://opensource.org/licenses
 
 ## 🔗 Adjacent Repositories
 
-- [in-rolls/elector_count](https://github.com/in-rolls/elector_count) — Estimate the total number of electors in a state by counting the number of pages in all the electoral rolls
-- [in-rolls/parse_searchable_rolls](https://github.com/in-rolls/parse_searchable_rolls) — Parse Searchable Electoral Rolls
-- [in-rolls/google_vision_ocr](https://github.com/in-rolls/google_vision_ocr) — Using Google Vision API to Get Text From (Unreadable) Electoral Rolls
-- [in-rolls/poll-station-metadata](https://github.com/in-rolls/poll-station-metadata) — Metadata on Polling Stations, including Officers, data on the building, and link to electoral rolls (some inactive)
-- [in-rolls/parse_unsearchable_rolls](https://github.com/in-rolls/parse_unsearchable_rolls) — Parse Unsearchable Electoral Rolls
+- [in-rolls/electoral_rolls_elector_count](https://github.com/in-rolls/electoral_rolls_elector_count) — Estimate the total number of electors in a state by counting the number of pages in all the electoral rolls
+- [in-rolls/electoral_rolls_parse_searchable](https://github.com/in-rolls/electoral_rolls_parse_searchable) — Parse Searchable Electoral Rolls
+- [in-rolls/electoral_rolls_ocr_google_vision](https://github.com/in-rolls/electoral_rolls_ocr_google_vision) — Using Google Vision API to Get Text From (Unreadable) Electoral Rolls
+- [in-rolls/polling_stations_metadata](https://github.com/in-rolls/polling_stations_metadata) — Metadata on Polling Stations, including Officers, data on the building, and link to electoral rolls (some inactive)
+- [in-rolls/electoral_rolls_parse_unsearchable](https://github.com/in-rolls/electoral_rolls_parse_unsearchable) — Parse Unsearchable Electoral Rolls
